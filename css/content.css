@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+/* ボタン */
+
+input[type="button"] {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+input[type="button"]:hover {
+    /* background: #E1E8EB; */
+    background: #343A40;
+    color: white
+}
+
+
+/* カード */
+.card {
+    width: 150px;
+}
+
+/* カード表示アニメ */
+.card {
+	animation: fadeIn 2s;
+	}
+	
+	@keyframes fadeIn {
+	from {
+	opacity: 0;
+	}
+	to {
+	opacity: 1;
+	}
+	}
+
+/* クリアボタン */
+.clear_b {
+	padding-bottom: 30px;
+    margin-top: 10px;
+}
+
+/* テキストエリア */
+textarea {
+	width: 312px;
+	border-radius: 5px;
+}
+textarea:focus {
+	border-color: #7952B3;
+    outline: none;
+}
+
+#insight_1 {
+	style:hidden
+	background-color: #E1E8EB;
+	color: black;
+}
+
+/* カードの説明 */
+#description1 { 
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+    background-color:#E1E8EB; 
+}
+#description1 {
+	display: inline-block;
+	animation-name: desc_a;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; /* 最後のキーフレームでのスタイルを保持 */
+} 
+@keyframes desc_a {
+	0% {
+	background-color: #E1E8EB;
+	}
+	100% {
+	background-color: #bfc8cc;
+	}
+} 
+
+#challengeDesc1Pre {
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+    background-color:#E1E8EB; 
+}
+#challengeDesc1Pre {
+	display: inline-block;
+	animation-name: desc_a;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; /* 最後のキーフレームでのスタイルを保持 */
+} 
+@keyframes desc_a {
+	0% {
+	background-color: #E1E8EB;
+	}
+	100% {
+	background-color: #bfc8cc;
+	}
+} 
+
+#description2 {
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+    background-color:#E1E8EB; 
+}
+#description2 {
+	display: inline-block;
+	animation-name: desc_a;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; /* 最後のキーフレームでのスタイルを保持 */
+} 
+@keyframes desc_a {
+	0% {
+	background-color: #E1E8EB;
+	}
+	100% {
+	background-color: #bfc8cc;
+	}
+} 
+
+#challengeDesc2Pre {
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+    background-color:#E1E8EB; 
+}
+#challengeDesc2Pre {
+	display: inline-block;
+	animation-name: desc_a;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; /* 最後のキーフレームでのスタイルを保持 */
+} 
+@keyframes desc_a {
+	0% {
+	background-color: #E1E8EB;
+	}
+	100% {
+	background-color: #bfc8cc;
+	}
+} 
+
+#description3 {
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+    background-color:#E1E8EB; 
+}
+#description3 {
+	display: inline-block;
+	animation-name: desc_a;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; /* 最後のキーフレームでのスタイルを保持 */
+} 
+@keyframes desc_a {
+	0% {
+	background-color: #E1E8EB;
+	}
+	100% {
+	background-color: #bfc8cc;
+	}
+} 
+
+#challengeDesc3Pre {
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+    background-color:#E1E8EB; 
+}
+#challengeDesc3Pre {
+	display: inline-block;
+	animation-name: desc_a;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; /* 最後のキーフレームでのスタイルを保持 */
+} 
+@keyframes desc_a {
+	0% {
+	background-color: #E1E8EB;
+	}
+	100% {
+	background-color: #bfc8cc;
+	}
+} 
+
+#descriptionPre {
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 15px;
+    background-color:#E1E8EB; 
+}
+#descriptionPre {
+	display: inline-block;
+	animation-name: desc_a;
+	animation-duration: 3s;
+	animation-fill-mode: forwards; /* 最後のキーフレームでのスタイルを保持 */
+} 
+@keyframes desc_a {
+	0% {
+	background-color: #E1E8EB;
+	}
+	100% {
+	background-color: #bfc8cc;
+	}
+} 

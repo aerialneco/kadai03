@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+/*========= バー表示のためのCSS ===============*/
+
+/*タイムライン全体の設定*/
+.timeline{
+	max-width: 400px;
+	width:100%;
+	margin:50px auto;
+	padding:0 30px;
+}
+
+.timeline li{
+    /*線の起点とするためrelativeを設定*/
+    position: relative;
+	list-style: none;
+	padding:0 0 20px 0;
+}
+
+.timeline dl{
+	margin:0 0 20px 3em;
+}
+
+.timeline dd strong{
+	display: block;
+	padding:10px 0;
+}
+
+
+/*絶対配置で線を設定*/
+.border-line {
+    /*線の位置*/
+	position: absolute;
+	left:0.35em;
+	top:0;
+	width:2px;/*線の太さ*/
+	height:0;/*はじめは高さを0に*/
+	background: #7952B3;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after{
+	content:'';
+	position: absolute;
+	top:0;
+	left:0;
+	width:12px;
+	height: 12px;
+	background: #7952B3;
+	border-radius: 50%;
+}
+
+
+.timeline li:hover::after{
+	background: #FFC107;
+	box-shadow: 0 0 30px rgba(243, 220, 8, 0.8);
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+body {
+    /* font-family: font-family: 'BIZ UDPGothic', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'M PLUS 2', sans-serif;
+    font-family: 'Tilt Prism', cursive; */
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
+header{
+	background: #343A40;
+}
+
+h1{
+	font-size:1.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px;
+	color: #fff;
+}
+
+h2{
+	font-size:1.2rem;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.intro{
+    text-align: left;
+}
+
+dt {
+    color: #370089;
+}
+
+p,ul{
+	margin-top:20px;	
+}
+
+a{
+	color:#333;
+}
+
+small{
+	background:#343A40;
+	color:#fff;
+	display: block;
+	text-align: center;
+	padding:20px;
+}
+
+section{
+	padding:30px;
+}
+section:first-child{
+	padding:30px 30px 0px;
+}
+
+section:nth-child(2n){
+	background: #E1E8EB;	
+}
+
+.instruction{
+    font-size: smaller;
+}
+
+.accordion .accordion-item {
+  border-bottom: 1px solid #7288a2;
+}
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 1px solid #370089;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+  font-family: 'Zen Maru Gothic', sans-serif;
+}
+.accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: #370089;
+}
+.accordion button:hover::after, .accordion button:focus::after {
+  cursor: pointer;
+  color: #370089;
+  border: 1px solid #370089;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  color:#370089;
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/* 賢者の言葉 */
+.blurBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+}
+
+.blur1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.blur2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+}

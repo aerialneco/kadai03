@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@700&family=Caveat&family=Dosis:wght@500&family=Libre+Baskerville&family=M+PLUS+2:wght@300&family=Tilt+Prism&family=Zen+Maru+Gothic:wght@500&display=swap" rel="stylesheet">
+    <title>ナラティブワーク：物語を通して自分自身を知る</title>
+</head>
+<body>
+    <header id="header">
+        <h1>ナラティブワーク：物語を通して自分自身を知る</h1>		
+    </header>              
+        <main>
+        <section>
+            <h2 class="intro">人はの経験や選択を経て、自分なりの価値観や物の見方を築いていきます。<br>
+                このワークでは、「社会的役割」から離れて自由な発想で物語を語ること通して、自分本来の価値観や考え方の傾向に意識を向けることや、
+                自分とタイプの異なる人物のものの見方を想像してみることで、考え方や感じ方の柔軟性を養うサポートをします。
+            </h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">使い方</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>「人物を表示する」、「チャレンジ・イベントを表示する」のボタンをクリックしてください。画像と簡単な説明が表示されますので、テキストフィールドに自由に感じた事や物語を入力してください。</p>
+                        </div>
+                    </div>    
+                    <div class="accordion-item">
+                        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">登場人物について</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>３人の登場人物がいます。絵柄の性別に従わなくとも、例えば男性性の強い女性という解釈でも大丈夫です。人物についての簡単な説明が表示されますが、絵柄から自由に発想しても大丈夫です。</p>
+                    </div>    
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">チャレンジやイベントについて</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>一般的な解釈で、良い出来事や体験も困難な出来事や体験も起こります。何が起こったのか、どんな決断・行動をしたのか、自由な発想で物語を作ってください。</p>
+                    </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">２人以上での使い方</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>順番にクリックして画像を表示し、各人が自分のストーリーを語る、という使い方も可能です。同じ情報から異なる発想が出てくることをについて、意見を交わしてもいいでしょう。</p>
+                    </div>        
+                    </div>
+                    <div class="accordion-item">
+                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">進め方のヒント</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>深く考え込まずに、直感的に感じたこと、心に浮かんだことを表現してください。正解も不正解もありません。</p>
+                    </div>    
+                    </div>
+            </div>
+        <!--/area1--></section>
+        <section>
+            <!-- <h2>プロローグ</h2> -->
+                <ul class="timeline">
+                    <li>
+                        <dl>
+                        <dt>プロローグ</dt>
+                        <dd>あるところ、ある時代に、ある人物がいました。ここは日本かもしれませんし、異世界かもしれません。過去かもしれませんし、未来かもしれません。<br>
+                            物語は、主人公の紹介から始まります。</dd>    
+                        </dl>
+                        <span class="border-line"></span>
+                    </li>
+                    <li>
+                        <dl>
+                        <dt>第１章</dt>
+                        <dd><strong>主人公の登場</strong>物語は、この人物の視点を通して語られます。どのような日常を送っている人でしょう。どんな人生の目標を持っているでしょう。</dd>
+                        <dd id="echo"></dd>
+                        <dd><input type="button" value="主人公を表示する" id="maincharacter"></input></dd>
+                        <dd class="instruction">人物について感じたことをメモしましょう。</dd>
+                        <dd><textarea id="insight_1" row="1"></textarea></dd>
+                        <dd><input type="button" value="入力し直す" onclick="clearInput1()" class="clear"></dd>
+                        </dl>
+                        <span class="border-line"></span>
+                    </li>
+                    <li>
+                        <dl>
+                        <dt>第２章</dt>
+                        <dd><strong>主人公のチャレンジ</strong>主人公が一人で体験するチャレンジやイベントです。何が起こったのでしょう。何をしようとしているのでしょう。</dd>
+                        <dd><input type="button" value="チャレンジ・イベントを表示する" id="challenge1"></input></dd>
+                        <dd id="echo3"></dd>
+                        <dd class="instruction">何か起こったのか物語をメモしましょう。</dd>
+                        <dd><textarea id="insight_2" row="1"></textarea></dd>
+                        <dd><input type="button" value="入力し直す" onclick="clearInput2()" class="clear"></dd>
+                        </dl>
+                        <span class="border-line"></span>	
+                    </li>
+                    <li>
+                        <dl>
+                        <dt>第３章</dt>
+                        <dd><strong>パートナーを得る</strong>第一のチャレンジを乗り越え、志を共にするパートナーが得られました。どんな出会いがあったのでしょう。一緒にどうなっていきたいでしょう。</dd>
+                        <dd><input type="button" value="パートナーを表示" id="partner"></input></dd>
+                        <dd id="echo2"></dd>
+                        <dd class="instruction">人物について感じたことをメモしましょう。</dd>
+                        <dd><textarea id="insight_3" row="1"></textarea></dd>
+                        <dd><input type="button" value="入力し直す" onclick="clearInput3()" class="clear"></dd>
+                        </dl>
+                        <span class="border-line"></span>	
+                    </li>
+                    <li>
+                        <dl>
+                        <dt>第４章</dt>
+                        <dd><strong>パートナーとチャレンジに立ち向かう</strong>主人公は、もう一人ではありません。パートナーと一緒にチャレンジやイベントを体験します。どんな事が起こって、どのように協力しあったのでしょう。どのような選択をするのでしょう。</dd>
+                        <dd><input type="button" value="チャレンジ・イベントを表示する" id="challenge2"></input></dd>
+                        <dd id="echo4"></dd>
+                        <dd class="instruction">何か起こったのか物語をメモしましょう。</dd>
+                        <dd><textarea id="insight_4" row="1"></textarea></dd>
+                        <dd><input type="button" value="入力し直す" onclick="clearInput4()" class="clear"></dd>
+                        </dl>
+                        <span class="border-line"></span>
+                    </li>
+                    <li>
+                        <dl>
+                        <dt>第５章</dt>
+                        <dd><strong>新しい出会い</strong>パートナーとチャレンジを乗り越え、新たな協力者と出会います。この人物は自分たちより若手です。どんなチームに育てていきたいでしょう。各メンバーの特徴を活かすにはどうすればいいでしょう。 どのようなコンフリクトが起こりそうでしょう。</dd>
+                        <dd><input type="button" value="新しい仲間を表示" id="team"></input></dd>
+                        <dd id="echo5"></dd>
+                        <dd class="instruction">人物について感じた事をメモしましょう。</dd>
+                        <dd><textarea id="insight_5" row="1"></textarea></dd>
+                        <dd><input type="button" value="入力し直す" onclick="clearInput5()" class="clear"></dd>
+                        </dl>
+                        <span class="border-line"></span>	
+                    </li>
+                    <li>
+                        <dl>
+                        <dt>第６章</dt>
+                        <dd><strong>チームでチャレンジに立ち向かう</strong>チームで体験するチャレンジやイベントです。どのような事が起こって、各人はどのように協力しあったのでしょう。どのような選択・決断をするのでしょう。</dd>
+                        <dd><input type="button" value="チャレンジ・イベントを表示する" id="challenge3"></input></dd>
+                        <dd id="echo6"></dd>
+                        <dd class="instruction">何か起こったのか物語をメモしましょう。</dd>
+                        <dd><textarea id="insight_6" row="1"></textarea></dd>
+                        <dd><input type="button" value="入力し直す" onclick="clearInput6()" class="clear"></dd>
+                        </dl>
+                        <span class="border-line"></span>	
+                    </li>
+                    <li>
+                        <dl>
+                        <dt>エピローグ</dt>
+                        <dd><strong>未来・学び・洞察</strong>これまでの物語を踏まえ、表示されるテーマについて洞察してみましょう。主人公やチームは何を学び、これからどのように人生の旅を続けるでしょうか。</dd>
+                        <dd><input type="button" value="チャレンジ・イベントを表示する" id="result"></input></dd>
+                        <dd id="echo7"></dd>
+                        <dd class="instruction">感じた事をメモしましょう。</dd>
+                        <dd><textarea id="insight_7" row="1"></textarea></dd>
+                        <dd><input type="button" value="入力し直す" onclick="clearInput7()" class="clear"></dd>
+                        </dl>
+                        <span class="border-line"></span>	
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>To be continued... </dt>
+                            <dd>あなた自身の物語はまだまた続きます。</dd>  
+                        </dl>
+                        <span class="border-line"></span>	
+                    </li>
+                </ul>
+        <!--/area2--></section>
+        <section>
+                    <h2>賢者の言葉</h2>
+                    <div class="blurBox">
+                    <div class="blur1"></div>
+                    <div class="blur2"></div>
+                    </div>
+        <!--/area3--></section>
+
+        <!--/main--></main>
+        
+    <footer id="footer">
+        <small>&copy; copyright.</small>	
+    </footer>	
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./js/base.js"></script>
+    <script src="./js/character.js"></script>
+    <script src="./js/challenge.js"></script>
+    <script src="./js/word.js"></script>
+        
+</body>
+</html>
